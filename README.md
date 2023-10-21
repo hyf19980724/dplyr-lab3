@@ -3,11 +3,13 @@
 
 ##Q1
 ```{r}
+```{r}
 spotify <- readRDS("C:/Users/DELL/Desktop/dplyr-lab3/top-spotify-hits-2000-2019.Rds")
 library(dplyr)
-unique_songs <- spotify %>% distinct(song) %>% nrow()
-unique_artists <- spotify %>% distinct(artist) %>% nrow()
-unique_genres <- spotify %>% distinct(genre) %>% nrow()
+num_songs <- spotify %>% distinct(song) %>% nrow()
+num_artists <- spotify %>% distinct(artist) %>% nrow()
+num_genres <- spotify %>% distinct(genre) %>% nrow()
+cat("The dataset contains", num_songs, "songs," ,num_artists,"artists, and ", num_genres, "musical genres.")
 ```
 
 ##Q2
