@@ -74,7 +74,7 @@ knitr::kable(median_stats_per_year, caption = "Median energy and danceability pe
 
 ```
 
-##Q5
+##Q6
 ```{r}
 library(ggplot2)
 
